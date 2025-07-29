@@ -1,4 +1,6 @@
-/* Algemene opmaak */
+/* App.css */
+
+/* Reset and font */
 body {
   margin: 0;
   font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -26,6 +28,10 @@ body {
   height: 44px;
 }
 
+.logo.large {
+  height: 72px;
+}
+
 .nav a {
   margin-left: 2rem;
   text-decoration: none;
@@ -38,52 +44,55 @@ body {
   color: #3b82f6;
 }
 
-/* Hero sectie */
+/* Hero */
 .hero {
-  background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%);
-}
-
-.full-screen {
   flex: 1;
+  padding: 4rem 2rem;
+  background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem 0;
+}
+
+.full-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-content {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
-  max-width: 1200px;
-  padding: 0 2rem;
-  gap: 2rem;
-  flex-wrap: wrap;
+  max-width: 1400px;
+  padding: 2rem;
+  gap: 4rem;
 }
 
 .hero-left {
   flex: 1;
-  min-width: 300px;
 }
 
-.hero-left h1 {
-  font-size: 3rem;
+.hero h1 {
+  font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
   color: #111827;
 }
 
-.hero-left p {
+.hero p {
   font-size: 1.25rem;
-  margin-bottom: 2rem;
+  max-width: 640px;
+  margin-bottom: 2.5rem;
   color: #4b5563;
 }
 
 .cta-buttons {
   display: flex;
+  gap: 1.25rem;
   flex-wrap: wrap;
-  gap: 1rem;
 }
 
 .btn-primary,
@@ -120,13 +129,17 @@ body {
   flex: 1;
   display: flex;
   justify-content: center;
-  min-width: 300px;
 }
 
 .hero-image {
   max-width: 100%;
   height: auto;
-  max-height: 500px;
+  border-radius: 12px;
+}
+
+.hero-image.large {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Footer */
