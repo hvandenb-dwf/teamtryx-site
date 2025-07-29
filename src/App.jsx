@@ -15,11 +15,16 @@ function App() {
       </header>
 
       <main className="hero">
-        <h1>Your Expert AI Work Companion</h1>
-        <p>TeamTryx helps professionals succeed at their job by providing specialized, always up-to-date digital experts.</p>
-        <div className="cta-buttons">
-          <a href="#get-started" className="btn-primary">Get Started</a>
-          <a href="#learn-more" className="btn-secondary">Learn More</a>
+        <div className="hero-content">
+          <h1>Your Expert AI Work Companion</h1>
+          <p>
+            TeamTryx helps professionals succeed at their job by providing
+            specialized, always up-to-date digital experts.
+          </p>
+          <div className="cta-buttons">
+            <a href="#get-started" className="btn-primary">Get Started</a>
+            <a href="#learn-more" className="btn-secondary">Learn More</a>
+          </div>
         </div>
       </main>
 

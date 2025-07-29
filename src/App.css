@@ -1,9 +1,16 @@
 /* App.css */
 
-/* Reset and font */
-body {
+/* Reset en basis */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
   font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+  width: 100%;
   background-color: #f8f9fc;
   color: #1f2937;
 }
@@ -43,29 +50,35 @@ body {
 /* Hero */
 .hero {
   flex: 1;
-  padding: 6rem 2rem 5rem;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 5rem 3rem;
   background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%);
 }
 
+.hero-content {
+  max-width: 800px;
+}
+
 .hero h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
   color: #111827;
+  line-height: 1.2;
 }
 
 .hero p {
   font-size: 1.25rem;
-  max-width: 640px;
-  margin: 0 auto 2.5rem;
+  margin-bottom: 2.5rem;
   color: #4b5563;
 }
 
 .cta-buttons {
   display: flex;
-  justify-content: center;
-  gap: 1.25rem;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 
@@ -106,4 +119,5 @@ body {
   background-color: #f3f4f6;
   font-size: 0.9rem;
   color: #6b7280;
+  margin-top: auto;
 }
