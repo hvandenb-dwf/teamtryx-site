@@ -1,16 +1,7 @@
-/* App.css */
-
-/* Reset en basis */
-* {
+/* Algemene opmaak */
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body, html {
   font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  height: 100%;
-  width: 100%;
   background-color: #f8f9fc;
   color: #1f2937;
 }
@@ -47,39 +38,52 @@ body, html {
   color: #3b82f6;
 }
 
-/* Hero */
+/* Hero sectie */
 .hero {
+  background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%);
+}
+
+.full-screen {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: left;
-  padding: 5rem 3rem;
-  background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%);
+  padding: 2rem 0;
 }
 
 .hero-content {
-  max-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-.hero h1 {
-  font-size: 3.5rem;
+.hero-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-left h1 {
+  font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
   color: #111827;
-  line-height: 1.2;
 }
 
-.hero p {
+.hero-left p {
   font-size: 1.25rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   color: #4b5563;
 }
 
 .cta-buttons {
   display: flex;
-  gap: 1rem;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .btn-primary,
@@ -112,6 +116,19 @@ body, html {
   background-color: #d1d5db;
 }
 
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 300px;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+}
+
 /* Footer */
 .footer {
   text-align: center;
@@ -119,5 +136,4 @@ body, html {
   background-color: #f3f4f6;
   font-size: 0.9rem;
   color: #6b7280;
-  margin-top: auto;
 }
